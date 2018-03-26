@@ -16,12 +16,17 @@ class HomePresenter: UIViewController {
     let mainView = MainView(frame: self.view.bounds)
     
     mainView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+    mainView.nextButton.addTarget(self, action: #selector(onClickNextButton), for: .touchUpInside)
     self.view.addSubview(mainView)
   }
   
   override func didReceiveMemoryWarning() {
     super.didReceiveMemoryWarning()
     // Dispose of any resources that can be recreated.
+  }
+  
+  @objc func onClickNextButton() {
+
   }
 
 }

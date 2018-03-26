@@ -13,6 +13,8 @@
 		E4022676206362F00008C8F5 /* iOSBoilerplateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4022675206362F00008C8F5 /* iOSBoilerplateTests.swift */; };
 		E4022681206362F00008C8F5 /* iOSBoilerplateUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4022680206362F00008C8F5 /* iOSBoilerplateUITests.swift */; };
 		E403FE642068BA6000BD2A8C /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E403FE632068BA6000BD2A8C /* HomePresenter.swift */; };
+		E403FE6A2068CDC100BD2A8C /* Cartography.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E403FE692068CDC100BD2A8C /* Cartography.framework */; };
+		E403FE6C2068DBE200BD2A8C /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E403FE6B2068DBE200BD2A8C /* AppRouter.swift */; };
 		E43258C220638EBB00871566 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43258C120638EBB00871566 /* MainView.swift */; };
 		E43258C82063973900871566 /* Eureka.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E43258C72063973900871566 /* Eureka.framework */; };
 /* End PBXBuildFile section */
@@ -47,6 +49,8 @@
 		E4022680206362F00008C8F5 /* iOSBoilerplateUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSBoilerplateUITests.swift; sourceTree = "<group>"; };
 		E4022682206362F00008C8F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E403FE632068BA6000BD2A8C /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		E403FE692068CDC100BD2A8C /* Cartography.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cartography.framework; path = Carthage/Build/iOS/Cartography.framework; sourceTree = "<group>"; };
+		E403FE6B2068DBE200BD2A8C /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
 		E43258C120638EBB00871566 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		E43258C72063973900871566 /* Eureka.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Eureka.framework; path = Carthage/Build/iOS/Eureka.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -56,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E403FE6A2068CDC100BD2A8C /* Cartography.framework in Frameworks */,
 				E43258C82063973900871566 /* Eureka.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -165,6 +170,7 @@
 		E403FE682068BEFC00BD2A8C /* Router */ = {
 			isa = PBXGroup;
 			children = (
+				E403FE6B2068DBE200BD2A8C /* AppRouter.swift */,
 			);
 			path = Router;
 			sourceTree = "<group>";
@@ -172,6 +178,7 @@
 		E43258C62063973900871566 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E403FE692068CDC100BD2A8C /* Cartography.framework */,
 				E43258C72063973900871566 /* Eureka.framework */,
 			);
 			name = Frameworks;
@@ -314,6 +321,7 @@
 			);
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/Eureka.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Cartography.framework",
 			);
 			outputPaths = (
 			);
@@ -328,6 +336,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E403FE6C2068DBE200BD2A8C /* AppRouter.swift in Sources */,
 				E403FE642068BA6000BD2A8C /* HomePresenter.swift in Sources */,
 				E43258C220638EBB00871566 /* MainView.swift in Sources */,
 				E4022661206362F00008C8F5 /* AppDelegate.swift in Sources */,

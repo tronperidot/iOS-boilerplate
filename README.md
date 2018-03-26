@@ -32,5 +32,5 @@ Download the project from the repository.
 
 ### Step3
 
-1.  Run:carthage bootsnap
+1.  Run:carthage bootstrap
 1.  Open:\*..xcodeproj
