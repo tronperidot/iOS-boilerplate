@@ -12,12 +12,12 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
   var window: UIWindow?
-  private(set) lazy var viewController = ViewController()
+  private(set) lazy var homeController = HomePresenter()
 
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
     self.window = UIWindow(frame: UIScreen.main.bounds)
     self.window?.makeKeyAndVisible()
-    self.window?.rootViewController = viewController
+    self.window?.rootViewController = homeController
     return true
   }
 

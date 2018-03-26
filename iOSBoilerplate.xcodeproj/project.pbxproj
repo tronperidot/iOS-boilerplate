@@ -8,11 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		E4022661206362F00008C8F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4022660206362F00008C8F5 /* AppDelegate.swift */; };
-		E4022663206362F00008C8F5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4022662206362F00008C8F5 /* ViewController.swift */; };
 		E4022668206362F00008C8F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4022667206362F00008C8F5 /* Assets.xcassets */; };
 		E402266B206362F00008C8F5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4022669206362F00008C8F5 /* LaunchScreen.storyboard */; };
 		E4022676206362F00008C8F5 /* iOSBoilerplateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4022675206362F00008C8F5 /* iOSBoilerplateTests.swift */; };
 		E4022681206362F00008C8F5 /* iOSBoilerplateUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4022680206362F00008C8F5 /* iOSBoilerplateUITests.swift */; };
+		E403FE642068BA6000BD2A8C /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E403FE632068BA6000BD2A8C /* HomePresenter.swift */; };
 		E43258C220638EBB00871566 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43258C120638EBB00871566 /* MainView.swift */; };
 		E43258C82063973900871566 /* Eureka.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E43258C72063973900871566 /* Eureka.framework */; };
 /* End PBXBuildFile section */
@@ -37,7 +37,6 @@
 /* Begin PBXFileReference section */
 		E402265D206362F00008C8F5 /* iOSBoilerplate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSBoilerplate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4022660206362F00008C8F5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E4022662206362F00008C8F5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E4022667206362F00008C8F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E402266A206362F00008C8F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E402266C206362F00008C8F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -47,6 +46,7 @@
 		E402267C206362F00008C8F5 /* iOSBoilerplateUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSBoilerplateUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4022680206362F00008C8F5 /* iOSBoilerplateUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSBoilerplateUITests.swift; sourceTree = "<group>"; };
 		E4022682206362F00008C8F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E403FE632068BA6000BD2A8C /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
 		E43258C120638EBB00871566 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		E43258C72063973900871566 /* Eureka.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Eureka.framework; path = Carthage/Build/iOS/Eureka.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -101,12 +101,15 @@
 		E402265F206362F00008C8F5 /* iOSBoilerplate */ = {
 			isa = PBXGroup;
 			children = (
+				E402266C206362F00008C8F5 /* Info.plist */,
 				E4022660206362F00008C8F5 /* AppDelegate.swift */,
-				E4022662206362F00008C8F5 /* ViewController.swift */,
 				E4022667206362F00008C8F5 /* Assets.xcassets */,
 				E4022669206362F00008C8F5 /* LaunchScreen.storyboard */,
-				E402266C206362F00008C8F5 /* Info.plist */,
-				E43258C120638EBB00871566 /* MainView.swift */,
+				E403FE652068BBC300BD2A8C /* View */,
+				E403FE662068BC2100BD2A8C /* Intractor */,
+				E403FE622068BA2000BD2A8C /* Presenter */,
+				E403FE672068BC6200BD2A8C /* Entity */,
+				E403FE682068BEFC00BD2A8C /* Router */,
 			);
 			path = iOSBoilerplate;
 			sourceTree = "<group>";
@@ -127,6 +130,43 @@
 				E4022682206362F00008C8F5 /* Info.plist */,
 			);
 			path = iOSBoilerplateUITests;
+			sourceTree = "<group>";
+		};
+		E403FE622068BA2000BD2A8C /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				E403FE632068BA6000BD2A8C /* HomePresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		E403FE652068BBC300BD2A8C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E43258C120638EBB00871566 /* MainView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E403FE662068BC2100BD2A8C /* Intractor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Intractor;
+			sourceTree = "<group>";
+		};
+		E403FE672068BC6200BD2A8C /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		E403FE682068BEFC00BD2A8C /* Router */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Router;
 			sourceTree = "<group>";
 		};
 		E43258C62063973900871566 /* Frameworks */ = {
@@ -288,7 +328,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E4022663206362F00008C8F5 /* ViewController.swift in Sources */,
+				E403FE642068BA6000BD2A8C /* HomePresenter.swift in Sources */,
 				E43258C220638EBB00871566 /* MainView.swift in Sources */,
 				E4022661206362F00008C8F5 /* AppDelegate.swift in Sources */,
 			);
