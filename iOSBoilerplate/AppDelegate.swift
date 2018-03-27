@@ -13,11 +13,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
   var window: UIWindow?
   private(set) lazy var homeController = HomePresenter()
+  var myNavigationController: UINavigationController?
 
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+    self.myNavigationController = UINavigationController(rootViewController: homeController)
     self.window = UIWindow(frame: UIScreen.main.bounds)
+    self.window?.rootViewController = self.myNavigationController
     self.window?.makeKeyAndVisible()
-    self.window?.rootViewController = homeController
     return true
   }
 

@@ -1,2 +1,3 @@
 github "robb/Cartography" "3.0.1"
+github "stephencelis/SQLite.swift" "0.11.4"
 github "xmartlabs/Eureka" "4.1.1"
