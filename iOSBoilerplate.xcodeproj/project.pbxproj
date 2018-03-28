@@ -12,12 +12,17 @@
 		E402266B206362F00008C8F5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4022669206362F00008C8F5 /* LaunchScreen.storyboard */; };
 		E4022676206362F00008C8F5 /* iOSBoilerplateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4022675206362F00008C8F5 /* iOSBoilerplateTests.swift */; };
 		E4022681206362F00008C8F5 /* iOSBoilerplateUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4022680206362F00008C8F5 /* iOSBoilerplateUITests.swift */; };
-		E403FE642068BA6000BD2A8C /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E403FE632068BA6000BD2A8C /* HomePresenter.swift */; };
 		E403FE6A2068CDC100BD2A8C /* Cartography.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E403FE692068CDC100BD2A8C /* Cartography.framework */; };
-		E403FE6C2068DBE200BD2A8C /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E403FE6B2068DBE200BD2A8C /* AppRouter.swift */; };
-		E43258C220638EBB00871566 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43258C120638EBB00871566 /* MainView.swift */; };
+		E403FE6C2068DBE200BD2A8C /* HomeWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = E403FE6B2068DBE200BD2A8C /* HomeWireFrame.swift */; };
+		E41AC0C9206B29A9000171E9 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E41AC0C8206B29A9000171E9 /* HomeView.swift */; };
+		E41AC0CB206B2AB2000171E9 /* AddWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = E41AC0CA206B2AB2000171E9 /* AddWireFrame.swift */; };
+		E41AC0CD206B2BCB000171E9 /* AddPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E41AC0CC206B2BCB000171E9 /* AddPresenter.swift */; };
+		E41AC0CF206B2BFC000171E9 /* AddIntractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E41AC0CE206B2BFC000171E9 /* AddIntractor.swift */; };
+		E41AC0D2206B3197000171E9 /* LocalDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E41AC0D1206B3197000171E9 /* LocalDataManager.swift */; };
+		E41AC0D4206B59B5000171E9 /* HomeIntractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E41AC0D3206B59B5000171E9 /* HomeIntractor.swift */; };
+		E41AC0D6206B5A23000171E9 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E41AC0D5206B5A23000171E9 /* HomePresenter.swift */; };
 		E43258C82063973900871566 /* Eureka.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E43258C72063973900871566 /* Eureka.framework */; };
-		E4FF7C612069DDF700176853 /* EditPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4FF7C602069DDF700176853 /* EditPresenter.swift */; };
+		E4FF7C612069DDF700176853 /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4FF7C602069DDF700176853 /* AddView.swift */; };
 		E4FF7C63206A223B00176853 /* SQLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4FF7C62206A223B00176853 /* SQLite.framework */; };
 /* End PBXBuildFile section */
 
@@ -50,12 +55,17 @@
 		E402267C206362F00008C8F5 /* iOSBoilerplateUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSBoilerplateUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4022680206362F00008C8F5 /* iOSBoilerplateUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSBoilerplateUITests.swift; sourceTree = "<group>"; };
 		E4022682206362F00008C8F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E403FE632068BA6000BD2A8C /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
 		E403FE692068CDC100BD2A8C /* Cartography.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cartography.framework; path = Carthage/Build/iOS/Cartography.framework; sourceTree = "<group>"; };
-		E403FE6B2068DBE200BD2A8C /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
-		E43258C120638EBB00871566 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		E403FE6B2068DBE200BD2A8C /* HomeWireFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeWireFrame.swift; sourceTree = "<group>"; };
+		E41AC0C8206B29A9000171E9 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		E41AC0CA206B2AB2000171E9 /* AddWireFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWireFrame.swift; sourceTree = "<group>"; };
+		E41AC0CC206B2BCB000171E9 /* AddPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPresenter.swift; sourceTree = "<group>"; };
+		E41AC0CE206B2BFC000171E9 /* AddIntractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddIntractor.swift; sourceTree = "<group>"; };
+		E41AC0D1206B3197000171E9 /* LocalDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalDataManager.swift; sourceTree = "<group>"; };
+		E41AC0D3206B59B5000171E9 /* HomeIntractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeIntractor.swift; sourceTree = "<group>"; };
+		E41AC0D5206B5A23000171E9 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
 		E43258C72063973900871566 /* Eureka.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Eureka.framework; path = Carthage/Build/iOS/Eureka.framework; sourceTree = "<group>"; };
-		E4FF7C602069DDF700176853 /* EditPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditPresenter.swift; sourceTree = "<group>"; };
+		E4FF7C602069DDF700176853 /* AddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
 		E4FF7C62206A223B00176853 /* SQLite.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SQLite.framework; path = Carthage/Build/iOS/SQLite.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -111,6 +121,7 @@
 		E402265F206362F00008C8F5 /* iOSBoilerplate */ = {
 			isa = PBXGroup;
 			children = (
+				E41AC0D0206B3182000171E9 /* DataManager */,
 				E402266C206362F00008C8F5 /* Info.plist */,
 				E4022660206362F00008C8F5 /* AppDelegate.swift */,
 				E4022667206362F00008C8F5 /* Assets.xcassets */,
@@ -145,8 +156,8 @@
 		E403FE622068BA2000BD2A8C /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
-				E403FE632068BA6000BD2A8C /* HomePresenter.swift */,
-				E4FF7C602069DDF700176853 /* EditPresenter.swift */,
+				E41AC0CC206B2BCB000171E9 /* AddPresenter.swift */,
+				E41AC0D5206B5A23000171E9 /* HomePresenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -154,7 +165,8 @@
 		E403FE652068BBC300BD2A8C /* View */ = {
 			isa = PBXGroup;
 			children = (
-				E43258C120638EBB00871566 /* MainView.swift */,
+				E4FF7C602069DDF700176853 /* AddView.swift */,
+				E41AC0C8206B29A9000171E9 /* HomeView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -162,6 +174,8 @@
 		E403FE662068BC2100BD2A8C /* Intractor */ = {
 			isa = PBXGroup;
 			children = (
+				E41AC0CE206B2BFC000171E9 /* AddIntractor.swift */,
+				E41AC0D3206B59B5000171E9 /* HomeIntractor.swift */,
 			);
 			path = Intractor;
 			sourceTree = "<group>";
@@ -176,9 +190,18 @@
 		E403FE682068BEFC00BD2A8C /* Router */ = {
 			isa = PBXGroup;
 			children = (
-				E403FE6B2068DBE200BD2A8C /* AppRouter.swift */,
+				E403FE6B2068DBE200BD2A8C /* HomeWireFrame.swift */,
+				E41AC0CA206B2AB2000171E9 /* AddWireFrame.swift */,
 			);
 			path = Router;
+			sourceTree = "<group>";
+		};
+		E41AC0D0206B3182000171E9 /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				E41AC0D1206B3197000171E9 /* LocalDataManager.swift */,
+			);
+			path = DataManager;
 			sourceTree = "<group>";
 		};
 		E43258C62063973900871566 /* Frameworks */ = {
@@ -344,10 +367,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E4FF7C612069DDF700176853 /* EditPresenter.swift in Sources */,
-				E403FE6C2068DBE200BD2A8C /* AppRouter.swift in Sources */,
-				E403FE642068BA6000BD2A8C /* HomePresenter.swift in Sources */,
-				E43258C220638EBB00871566 /* MainView.swift in Sources */,
+				E4FF7C612069DDF700176853 /* AddView.swift in Sources */,
+				E403FE6C2068DBE200BD2A8C /* HomeWireFrame.swift in Sources */,
+				E41AC0CF206B2BFC000171E9 /* AddIntractor.swift in Sources */,
+				E41AC0D4206B59B5000171E9 /* HomeIntractor.swift in Sources */,
+				E41AC0D2206B3197000171E9 /* LocalDataManager.swift in Sources */,
+				E41AC0D6206B5A23000171E9 /* HomePresenter.swift in Sources */,
+				E41AC0C9206B29A9000171E9 /* HomeView.swift in Sources */,
+				E41AC0CB206B2AB2000171E9 /* AddWireFrame.swift in Sources */,
+				E41AC0CD206B2BCB000171E9 /* AddPresenter.swift in Sources */,
 				E4022661206362F00008C8F5 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

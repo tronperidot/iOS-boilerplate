@@ -12,7 +12,7 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
   var window: UIWindow?
-  private(set) lazy var homeController = HomePresenter()
+  private(set) lazy var homeController = HomeWireFrame.createModule()
   var myNavigationController: UINavigationController?
 
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
