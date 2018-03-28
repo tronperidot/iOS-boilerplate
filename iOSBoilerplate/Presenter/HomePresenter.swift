@@ -15,6 +15,10 @@ class HomePresenter: NSObject {
   var interactor: HomeIntractor?
   var wireFrame: HomeWireFrame?
   
+  func viewDidLoad() {
+    self.interactor?.tableInit()
+  }
+  
   func viewWillAppear() {
     self.view?.todos = self.interactor?.loadTask() ?? []
     self.view?.table.reloadData()
@@ -22,6 +26,6 @@ class HomePresenter: NSObject {
   
   func toAddPage() {
     let second = AddWireFrame.createModule()
-    self.view.navigationController?.pushViewController(second, animated: true)
+    self.view?.navigationController?.pushViewController(second, animated: true)
   }
 }

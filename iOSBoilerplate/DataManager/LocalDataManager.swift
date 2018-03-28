@@ -12,6 +12,7 @@ import SQLite
 class LocalDataManager: NSObject {
   var db: Connection?
   let taskTable = Table("tasks")
+  let idCol = Expression<Int64>("id")
   let taskCol = Expression<String>("todo")
   
   override init() {
@@ -46,6 +47,17 @@ class LocalDataManager: NSObject {
     }
   }
   
+  func tableInit() {
+    do {
+      try self.db?.run(taskTable.create { t in
+        t.column(idCol, primaryKey: .autoincrement)
+        t.column(Expression<String>("todo"))
+      })
+    } catch {
+      print("create err")
+    }
+  }
+
   private func dbInit() {
     let path = NSSearchPathForDirectoriesInDomains(
       .documentDirectory, .userDomainMask, true

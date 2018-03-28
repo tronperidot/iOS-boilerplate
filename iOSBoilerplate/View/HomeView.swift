@@ -33,6 +33,8 @@ class HomeView: UIViewController, UITableViewDelegate, UITableViewDataSource {
     table.delegate = self
     self.view.backgroundColor = .white
     self.view.addSubview(table)
+    
+    self.presenter?.viewDidLoad()
   }
   
   override func viewWillAppear(_ animated: Bool) {
