@@ -1,0 +1,34 @@
+### Headers settings
+company: tronperidot 
+
+### Xcode project settings
+project_name: iOS-boilerplate
+xcodeproj_path: iOSBoilerplate.xcodeproj
+
+### Code generation settings section
+# The main project target name
+project_target: iOSBoilerplate
+
+# The file path for new modules
+project_file_path: /iOSBoilerplate/Modules
+
+# The Xcode group path to new modules
+project_group_path: /iOSBoilerplate/Modules
+
+### Tests generation settings section
+# The tests target name
+test_target: iOSBoilerplateTests
+
+# The file path for new tests
+test_file_path: /iOSBoilerplateTests
+
+# The Xcode group path to new tests
+test_group_path: /iOSBoilerplateTests
+
+### Dependencies settings section
+
+cartfile_path: Cartfile
+
+### Templates
+templates:
+- {name: simple_viper, git: 'https://github.com/tronperidot/simple_viper'}
