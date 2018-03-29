@@ -97,6 +97,69 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E401770A206C9F3500CD7A9D /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				E401770B206CA18A00CD7A9D /* Home */,
+				E4017711206CA2BE00CD7A9D /* Add */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		E401770B206CA18A00CD7A9D /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				E401770C206CA19C00CD7A9D /* View */,
+				E4017710206CA1E600CD7A9D /* Intractor */,
+				E401770D206CA1A400CD7A9D /* Presenter */,
+				E401770E206CA1B600CD7A9D /* Router */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		E401770C206CA19C00CD7A9D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E41AC0C8206B29A9000171E9 /* HomeView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E401770D206CA1A400CD7A9D /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				E41AC0D5206B5A23000171E9 /* HomePresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		E401770E206CA1B600CD7A9D /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				E403FE6B2068DBE200BD2A8C /* HomeWireFrame.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		E4017710206CA1E600CD7A9D /* Intractor */ = {
+			isa = PBXGroup;
+			children = (
+				E41AC0D3206B59B5000171E9 /* HomeIntractor.swift */,
+			);
+			path = Intractor;
+			sourceTree = "<group>";
+		};
+		E4017711206CA2BE00CD7A9D /* Add */ = {
+			isa = PBXGroup;
+			children = (
+				E403FE652068BBC300BD2A8C /* View */,
+				E403FE662068BC2100BD2A8C /* Intractor */,
+				E403FE622068BA2000BD2A8C /* Presenter */,
+				E403FE682068BEFC00BD2A8C /* Router */,
+			);
+			path = Add;
+			sourceTree = "<group>";
+		};
 		E4022654206362EF0008C8F5 = {
 			isa = PBXGroup;
 			children = (
@@ -121,16 +184,13 @@
 		E402265F206362F00008C8F5 /* iOSBoilerplate */ = {
 			isa = PBXGroup;
 			children = (
+				E401770A206C9F3500CD7A9D /* Modules */,
 				E41AC0D0206B3182000171E9 /* DataManager */,
+				E403FE672068BC6200BD2A8C /* Entity */,
 				E402266C206362F00008C8F5 /* Info.plist */,
 				E4022660206362F00008C8F5 /* AppDelegate.swift */,
 				E4022667206362F00008C8F5 /* Assets.xcassets */,
 				E4022669206362F00008C8F5 /* LaunchScreen.storyboard */,
-				E403FE652068BBC300BD2A8C /* View */,
-				E403FE662068BC2100BD2A8C /* Intractor */,
-				E403FE622068BA2000BD2A8C /* Presenter */,
-				E403FE672068BC6200BD2A8C /* Entity */,
-				E403FE682068BEFC00BD2A8C /* Router */,
 			);
 			path = iOSBoilerplate;
 			sourceTree = "<group>";
@@ -157,7 +217,6 @@
 			isa = PBXGroup;
 			children = (
 				E41AC0CC206B2BCB000171E9 /* AddPresenter.swift */,
-				E41AC0D5206B5A23000171E9 /* HomePresenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -166,7 +225,6 @@
 			isa = PBXGroup;
 			children = (
 				E4FF7C602069DDF700176853 /* AddView.swift */,
-				E41AC0C8206B29A9000171E9 /* HomeView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -175,7 +233,6 @@
 			isa = PBXGroup;
 			children = (
 				E41AC0CE206B2BFC000171E9 /* AddIntractor.swift */,
-				E41AC0D3206B59B5000171E9 /* HomeIntractor.swift */,
 			);
 			path = Intractor;
 			sourceTree = "<group>";
@@ -190,7 +247,6 @@
 		E403FE682068BEFC00BD2A8C /* Router */ = {
 			isa = PBXGroup;
 			children = (
-				E403FE6B2068DBE200BD2A8C /* HomeWireFrame.swift */,
 				E41AC0CA206B2AB2000171E9 /* AddWireFrame.swift */,
 			);
 			path = Router;

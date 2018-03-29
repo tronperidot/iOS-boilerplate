@@ -16,8 +16,16 @@ class LocalDataManager: NSObject {
   let taskCol = Expression<String>("todo")
   
   override init() {
+    let path = NSSearchPathForDirectoriesInDomains(
+      .documentDirectory, .userDomainMask, true
+      ).first!
+    do {
+      self.db = try Connection("\(path)/db.sqlite3")
+    } catch {
+      print("db connection Err")
+      print(path)
+    }
     super.init()
-    self.dbInit()
   }
   
   
@@ -55,18 +63,6 @@ class LocalDataManager: NSObject {
       })
     } catch {
       print("create err")
-    }
-  }
-
-  private func dbInit() {
-    let path = NSSearchPathForDirectoriesInDomains(
-      .documentDirectory, .userDomainMask, true
-      ).first!
-    do {
-      self.db = try Connection("\(path)/db.sqlite3")
-    } catch {
-      print("db connection Err")
-      print(path)
     }
   }
 }
