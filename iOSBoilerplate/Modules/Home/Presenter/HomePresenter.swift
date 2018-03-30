@@ -1,31 +1,19 @@
-//
-//  HomePresenter.swift
-//  iOSBoilerplate
-//
-//  Created by yk13475 on 2018/03/28.
-//  Copyright © 2018年 tronperidot. All rights reserved.
-//
+class HomePresenter {
+  weak var viewController: HomeViewController?
+  var interactor: HomeInteractor?
+  var router: HomeRouter?
 
-import UIKit
-
-class HomePresenter: NSObject {
-  // viper
-  // TODO: change interfaces
-  weak var view: HomeView?
-  var interactor: HomeIntractor?
-  var wireFrame: HomeWireFrame?
-  
   func viewDidLoad() {
     self.interactor?.tableInit()
   }
   
   func viewWillAppear() {
-    self.view?.todos = self.interactor?.loadTask() ?? []
-    self.view?.table.reloadData()
+    self.viewController?.todos = self.interactor?.loadTask() ?? []
+    self.viewController?.table.reloadData()
   }
   
   func toAddPage() {
-    let second = AddWireFrame.createModule()
-    self.view?.navigationController?.pushViewController(second, animated: true)
+    let second = AddRouter.createModule()
+    self.viewController?.navigationController?.pushViewController(second, animated: true)
   }
 }

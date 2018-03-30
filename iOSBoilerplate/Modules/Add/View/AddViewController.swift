@@ -1,20 +1,10 @@
-//
-//  AddView.swift
-//  iOSBoilerplate
-//
-//  Created by yk13475 on 2018/03/27.
-//  Copyright © 2018年 tronperidot. All rights reserved.
-//
-
 import UIKit
 
-class AddView: UIViewController {
-  // viper
-  // TODO: change interface to PresenterProtcol
+class AddViewController: UIViewController {
   var presenter: AddPresenter?
-
-  var textField: UITextField!
   
+  var textField: UITextField!
+
   override func viewDidLoad() {
     super.viewDidLoad()
     self.title = "Add"
@@ -25,15 +15,16 @@ class AddView: UIViewController {
     let writeBtn: UIButton = UIButton(frame: CGRect(x: 100, y: 150, width: 200, height: 30))
     writeBtn.backgroundColor = UIColor.magenta
     writeBtn.setTitle("タスク保存", for: UIControlState.normal)
-    writeBtn.addTarget(self, action: #selector(self.addAction), for: UIControlEvents.touchUpInside)
+    writeBtn.addTarget(self, action: #selector(self.onClickWriteBtn), for: UIControlEvents.touchUpInside)
     self.view.addSubview(writeBtn)
+    self.presenter?.viewDidLoad()
+  }
+
+  override func viewWillAppear(_ animated: Bool) {
+    self.presenter?.viewWillAppear()
   }
   
-  override func didReceiveMemoryWarning() {
-    super.didReceiveMemoryWarning()
-  }
-  
-  @objc func addAction() {
+  @objc func onClickWriteBtn() {
     self.presenter?.addAction()
   }
 }
