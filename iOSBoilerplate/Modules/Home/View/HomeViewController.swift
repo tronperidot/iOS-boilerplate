@@ -4,7 +4,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
   var presenter: HomePresenter?
 
   let table = UITableView()
-  var todos: [String] = []
+  var todos: [Task] = []
 
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -33,7 +33,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
   
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     let cell = tableView.dequeueReusableCell(withIdentifier: "data", for: indexPath) as UITableViewCell
-    cell.textLabel?.text = todos[indexPath.row]
+    cell.textLabel?.text = todos[indexPath.row].todo
     return cell
   }
   

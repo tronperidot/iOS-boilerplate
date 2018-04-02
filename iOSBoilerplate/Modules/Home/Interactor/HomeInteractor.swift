@@ -1,14 +1,11 @@
-class HomeInteractor {
+class HomeInteractor: BaseInteractor {
   weak var presenter: HomePresenter?
   
-  var localDataManager: LocalDataManager?
+  func loadTask() -> [Task] {
+    return self.resourceService.task.all()
+  }
   
   func tableInit() {
-    self.localDataManager?.tableInit()
+    self.resourceService.initService.migration()
   }
-  
-  func loadTask() -> [String] {
-    return localDataManager?.loadTasks() ?? []
-  }
-
 }

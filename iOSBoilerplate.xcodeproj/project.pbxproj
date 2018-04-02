@@ -25,12 +25,16 @@
 		DAA8D83B306863B6F6ACB1EA /* AddRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B84941AB1EBEEC9D0CF7D581 /* AddRouterTests.swift */; };
 		E4022661206362F00008C8F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4022660206362F00008C8F5 /* AppDelegate.swift */; };
 		E4022668206362F00008C8F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4022667206362F00008C8F5 /* Assets.xcassets */; };
-		E402266B206362F00008C8F5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4022669206362F00008C8F5 /* LaunchScreen.storyboard */; };
 		E4022676206362F00008C8F5 /* iOSBoilerplateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4022675206362F00008C8F5 /* iOSBoilerplateTests.swift */; };
 		E4022681206362F00008C8F5 /* iOSBoilerplateUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4022680206362F00008C8F5 /* iOSBoilerplateUITests.swift */; };
 		E403FE6A2068CDC100BD2A8C /* Cartography.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E403FE692068CDC100BD2A8C /* Cartography.framework */; };
-		E41AC0D2206B3197000171E9 /* LocalDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E41AC0D1206B3197000171E9 /* LocalDataManager.swift */; };
 		E43258C82063973900871566 /* Eureka.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E43258C72063973900871566 /* Eureka.framework */; };
+		E45F91B5206E055C00A690E5 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45F91B4206E055C00A690E5 /* Task.swift */; };
+		E45F91B82071D3AE00A690E5 /* TaskSchema.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45F91B72071D3AE00A690E5 /* TaskSchema.swift */; };
+		E45F91BB2071E50000A690E5 /* TaskService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45F91BA2071E50000A690E5 /* TaskService.swift */; };
+		E45F91BD2071EB5900A690E5 /* ResourceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45F91BC2071EB5900A690E5 /* ResourceService.swift */; };
+		E45F91C02071EF9700A690E5 /* BaseInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45F91BF2071EF9700A690E5 /* BaseInteractor.swift */; };
+		E45F91C2207204BE00A690E5 /* InitService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45F91C1207204BE00A690E5 /* InitService.swift */; };
 		E4FF7C63206A223B00176853 /* SQLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4FF7C62206A223B00176853 /* SQLite.framework */; };
 		EA68A765A6C3C090189BDD9C /* AddPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB650F1CF13DA1D216B4C2BB /* AddPresenterTests.swift */; };
 		EC7BD8D71D533C4560004C13 /* AddPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F8854EAF28A41922E7E4646 /* AddPresenter.swift */; };
@@ -78,7 +82,6 @@
 		E402265D206362F00008C8F5 /* iOSBoilerplate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSBoilerplate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4022660206362F00008C8F5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E4022667206362F00008C8F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		E402266A206362F00008C8F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E402266C206362F00008C8F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E4022671206362F00008C8F5 /* iOSBoilerplateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSBoilerplateTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4022675206362F00008C8F5 /* iOSBoilerplateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSBoilerplateTests.swift; sourceTree = "<group>"; };
@@ -87,8 +90,13 @@
 		E4022680206362F00008C8F5 /* iOSBoilerplateUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSBoilerplateUITests.swift; sourceTree = "<group>"; };
 		E4022682206362F00008C8F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E403FE692068CDC100BD2A8C /* Cartography.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cartography.framework; path = Carthage/Build/iOS/Cartography.framework; sourceTree = "<group>"; };
-		E41AC0D1206B3197000171E9 /* LocalDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalDataManager.swift; sourceTree = "<group>"; };
 		E43258C72063973900871566 /* Eureka.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Eureka.framework; path = Carthage/Build/iOS/Eureka.framework; sourceTree = "<group>"; };
+		E45F91B4206E055C00A690E5 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		E45F91B72071D3AE00A690E5 /* TaskSchema.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskSchema.swift; sourceTree = "<group>"; };
+		E45F91BA2071E50000A690E5 /* TaskService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskService.swift; sourceTree = "<group>"; };
+		E45F91BC2071EB5900A690E5 /* ResourceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourceService.swift; sourceTree = "<group>"; };
+		E45F91BF2071EF9700A690E5 /* BaseInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseInteractor.swift; sourceTree = "<group>"; };
+		E45F91C1207204BE00A690E5 /* InitService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitService.swift; sourceTree = "<group>"; };
 		E4FF7C62206A223B00176853 /* SQLite.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SQLite.framework; path = Carthage/Build/iOS/SQLite.framework; sourceTree = "<group>"; };
 		FF1FF903E9648E9D7886D2F9 /* HogeViewTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HogeViewTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -362,12 +370,14 @@
 			isa = PBXGroup;
 			children = (
 				E401770A206C9F3500CD7A9D /* Modules */,
+				E45F91B92071E4E400A690E5 /* Service */,
+				E45F91B62071D38900A690E5 /* Schema */,
 				E41AC0D0206B3182000171E9 /* DataManager */,
+				E45F91BE2071EF1300A690E5 /* Extension */,
 				E403FE672068BC6200BD2A8C /* Entity */,
 				E402266C206362F00008C8F5 /* Info.plist */,
 				E4022660206362F00008C8F5 /* AppDelegate.swift */,
 				E4022667206362F00008C8F5 /* Assets.xcassets */,
-				E4022669206362F00008C8F5 /* LaunchScreen.storyboard */,
 			);
 			path = iOSBoilerplate;
 			sourceTree = "<group>";
@@ -396,6 +406,7 @@
 		E403FE672068BC6200BD2A8C /* Entity */ = {
 			isa = PBXGroup;
 			children = (
+				E45F91B4206E055C00A690E5 /* Task.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -403,7 +414,6 @@
 		E41AC0D0206B3182000171E9 /* DataManager */ = {
 			isa = PBXGroup;
 			children = (
-				E41AC0D1206B3197000171E9 /* LocalDataManager.swift */,
 			);
 			path = DataManager;
 			sourceTree = "<group>";
@@ -416,6 +426,32 @@
 				E43258C72063973900871566 /* Eureka.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E45F91B62071D38900A690E5 /* Schema */ = {
+			isa = PBXGroup;
+			children = (
+				E45F91B72071D3AE00A690E5 /* TaskSchema.swift */,
+			);
+			path = Schema;
+			sourceTree = "<group>";
+		};
+		E45F91B92071E4E400A690E5 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				E45F91BA2071E50000A690E5 /* TaskService.swift */,
+				E45F91C1207204BE00A690E5 /* InitService.swift */,
+				E45F91BC2071EB5900A690E5 /* ResourceService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		E45F91BE2071EF1300A690E5 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				E45F91BF2071EF9700A690E5 /* BaseInteractor.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 		F96A9EE5DD3812F7D49B36C5 /* View */ = {
@@ -534,7 +570,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E402266B206362F00008C8F5 /* LaunchScreen.storyboard in Resources */,
 				E4022668206362F00008C8F5 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -579,15 +614,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E41AC0D2206B3197000171E9 /* LocalDataManager.swift in Sources */,
 				E4022661206362F00008C8F5 /* AppDelegate.swift in Sources */,
 				21650546425CE98DE008FDFC /* AddViewController.swift in Sources */,
+				E45F91B82071D3AE00A690E5 /* TaskSchema.swift in Sources */,
 				EC7BD8D71D533C4560004C13 /* AddPresenter.swift in Sources */,
+				E45F91BD2071EB5900A690E5 /* ResourceService.swift in Sources */,
+				E45F91B5206E055C00A690E5 /* Task.swift in Sources */,
+				E45F91BB2071E50000A690E5 /* TaskService.swift in Sources */,
 				C9862D7A16C38A2A74516178 /* AddInteractor.swift in Sources */,
 				73F4043C4B0E65A19198E440 /* AddRouter.swift in Sources */,
 				C57E8C2F173CAB39C26D8BDA /* HomeViewController.swift in Sources */,
+				E45F91C02071EF9700A690E5 /* BaseInteractor.swift in Sources */,
 				17B2DE693982C7DDBC23667F /* HomeInteractor.swift in Sources */,
 				FBEFD457D44551D65A89A2FB /* HomePresenter.swift in Sources */,
+				E45F91C2207204BE00A690E5 /* InitService.swift in Sources */,
 				8A5E7F4335507E84D6F3EA05 /* HomeRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -634,17 +674,6 @@
 			targetProxy = E402267D206362F00008C8F5 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		E4022669206362F00008C8F5 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E402266A206362F00008C8F5 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		E4022683206362F00008C8F5 /* Debug */ = {

@@ -1,8 +1,7 @@
-class AddInteractor {
+class AddInteractor: BaseInteractor {
   weak var presenter: AddPresenter?
-  var localDataManager: LocalDataManager?
 
   func addTask(text: String) -> Bool {
-    return self.localDataManager?.writeTask(text: text) ?? false
+    return self.resourceService.task.insert(text) > 0
   }
 }
