@@ -13,7 +13,8 @@ class HomePresenter {
   }
   
   func toAddPage() {
-    let second = AddRouter.createModule()
+//    let second = AddRouter.createModule()
+    let second = GraphRouter.createModule()
     self.viewController?.navigationController?.pushViewController(second, animated: true)
   }
 }
