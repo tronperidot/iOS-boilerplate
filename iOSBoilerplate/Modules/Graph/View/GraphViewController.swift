@@ -8,48 +8,60 @@ class GraphViewController: UIViewController, ChartViewDelegate {
 
   var chartView = CombinedChartView()
   
-  let months = ["Jan", "Feb", "Mar",
-                "Apr", "May", "Jun",
-                "Jul", "Aug", "Sep",
-                "Jul", "Aug", "Sep",
-                "Oct", "Nov", "Dec"]
-
   override func viewDidLoad() {
     super.viewDidLoad()
+    self.navigationController?.navigationBar.isTranslucent = false
     self.title = "graph"
-    
-    self.chartView.frame = self.view.bounds
+    self.navigationController?.setNavigationBarHidden(false, animated: false)
+    let frame = self.view.frame
+    // margin 5% 10%
+    self.chartView.frame = CGRect(x: frame.width * 0.05, y: frame.height * 0.1, width: frame.width * 0.9, height: frame.height * 0.8)
     self.chartView.delegate = self
     self.chartView.chartDescription?.enabled = false
+    
     self.chartView.drawBarShadowEnabled = false
+    self.chartView.drawValueAboveBarEnabled = false
     self.chartView.highlightFullBarEnabled = false
+    
+    self.chartView.pinchZoomEnabled = false
+    self.chartView.doubleTapToZoomEnabled = false
+    
     self.chartView.drawOrder = [DrawOrder.bar.rawValue,
                            DrawOrder.line.rawValue]
+    self.chartView.pinchZoomEnabled = false
 
     let l = chartView.legend
     l.wordWrapEnabled = true
-    l.horizontalAlignment = .center
+    l.horizontalAlignment = .left
     l.verticalAlignment = .bottom
     l.orientation = .horizontal
     l.drawInside = false
-    //        chartView.legend = l
+    l.form = .line
     
     let rightAxis = chartView.rightAxis
     rightAxis.axisMinimum = 0
     
+
     let leftAxis = chartView.leftAxis
     leftAxis.axisMinimum = 0
     
     let xAxis = chartView.xAxis
-    xAxis.labelPosition = .bothSided
+    xAxis.labelPosition = .bottom
     xAxis.axisMinimum = 0
     xAxis.granularity = 1
-    xAxis.valueFormatter = self
+    xAxis.drawGridLinesEnabled = false
+    xAxis.drawAxisLineEnabled = false
+    xAxis.enabled = false
+    self.setChartData()
     
+    let label = UILabel(frame: CGRect(x: 0, y: 0, width: 100, height: 20))
+    print(self.view.bounds)
+    print(self.view.frame)
+    label.text = "単位（xxx）"
     self.view.backgroundColor = UIColor.white
     self.view.addSubview(self.chartView)
+    self.view.addSubview(label)
     self.presenter?.viewDidLoad()
-    self.setChartData()
   }
 
   override func viewWillAppear(_ animated: Bool) {
@@ -66,25 +78,42 @@ class GraphViewController: UIViewController, ChartViewDelegate {
   }
   
   func generateLineData() -> LineChartData {
-    let entries = (0..<ITEM_COUNT).map { (i) -> ChartDataEntry in
-      return ChartDataEntry(x: Double(i), y: Double(arc4random_uniform(15) + 5))
+    var entries = (0..<ITEM_COUNT).map { (i) -> ChartDataEntry in
+      return ChartDataEntry(x: Double(i), y: Double(arc4random_uniform(30) + 20))
     }
     
-    let set = LineChartDataSet(values: entries, label: "Line DataSet")
-    set.setColor(UIColor(red: 240/255, green: 238/255, blue: 70/255, alpha: 1))
+    entries.remove(at: 2)
+    entries.remove(at: 2)
+  
+    
+    let entries2 = (0..<ITEM_COUNT).map { (i) -> ChartDataEntry in
+      return ChartDataEntry(x: Double(i), y: Double(arc4random_uniform(45) + 5))
+    }
+    let yellow = UIColor(red: 240/255, green: 238/255, blue: 70/255, alpha: 1)
+    let set1 = self.makeLineDataSet(values: Array(entries.prefix(2)).map{$0}, label: "Line DataSet", color: yellow)
+    let set2 = self.makeLineDataSet(values: Array(Array(entries.dropFirst(1)).prefix(2)).map{$0}, label: "Line DataSet", color: yellow)
+    let set3 = self.makeLineDataSet(values: Array(entries.dropFirst(2)).map{$0}, label: "Line DataSet", color: yellow)
+    set2.lineDashLengths = [5, 2.5]
+    
+    let setAtBlue = self.makeLineDataSet(values: entries2, label: "Line DataSet", color: UIColor.blue)
+    return LineChartData(dataSets: [set1, set2, set3, setAtBlue])
+  }
+  
+  private func makeLineDataSet(values: [Charts.ChartDataEntry]?, label: String?, color: UIColor) -> LineChartDataSet {
+    let set = LineChartDataSet(values: values, label: label)
+    set.setColor(color)
     set.lineWidth = 2.5
-    set.setCircleColor(UIColor(red: 240/255, green: 238/255, blue: 70/255, alpha: 1))
+    set.setCircleColor(color)
     set.circleRadius = 5
     set.circleHoleRadius = 2.5
-    set.fillColor = UIColor(red: 240/255, green: 238/255, blue: 70/255, alpha: 1)
-    set.mode = .cubicBezier
+    set.fillColor = color
+    set.mode = .linear
     set.drawValuesEnabled = true
     set.valueFont = .systemFont(ofSize: 10)
-    set.valueTextColor = UIColor(red: 240/255, green: 238/255, blue: 70/255, alpha: 1)
+    set.valueTextColor = color
     
     set.axisDependency = .left
-    
-    return LineChartData(dataSet: set)
+    return set
   }
   
   func generateBarData() -> BarChartData {
@@ -97,7 +126,6 @@ class GraphViewController: UIViewController, ChartViewDelegate {
     set1.valueTextColor = UIColor(red: 60/255, green: 220/255, blue: 78/255, alpha: 1)
     set1.valueFont = .systemFont(ofSize: 10)
     // set1.axisDependency = .left
-    
     set1.drawValuesEnabled = false
 
     let barWidth = 0.9
@@ -108,10 +136,3 @@ class GraphViewController: UIViewController, ChartViewDelegate {
     return data
   }
 }
-
-extension GraphViewController: IAxisValueFormatter {
-  func stringForValue(_ value: Double, axis: AxisBase?) -> String {
-    return months[Int(value) % months.count]
-  }
-}
-
