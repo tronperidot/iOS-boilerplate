@@ -35,6 +35,12 @@
 		E45F91BD2071EB5900A690E5 /* ResourceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45F91BC2071EB5900A690E5 /* ResourceService.swift */; };
 		E45F91C02071EF9700A690E5 /* BaseInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45F91BF2071EF9700A690E5 /* BaseInteractor.swift */; };
 		E45F91C2207204BE00A690E5 /* InitService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45F91C1207204BE00A690E5 /* InitService.swift */; };
+		E4F170852075F1D800BE9C47 /* SwiftChartRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F170842075F1D800BE9C47 /* SwiftChartRouter.swift */; };
+		E4F170872075F1FC00BE9C47 /* SwiftChartPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F170862075F1FC00BE9C47 /* SwiftChartPresenter.swift */; };
+		E4F170892075F20D00BE9C47 /* SwiftChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F170882075F20D00BE9C47 /* SwiftChartViewController.swift */; };
+		E4F1708B2075F21A00BE9C47 /* SwiftChartInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F1708A2075F21A00BE9C47 /* SwiftChartInteractor.swift */; };
+		E4F1708D2075F59B00BE9C47 /* SwiftCharts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4F1708C2075F59B00BE9C47 /* SwiftCharts.framework */; };
+		E4F1708F2075F5C600BE9C47 /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4F1708E2075F5C600BE9C47 /* Charts.framework */; };
 		E4FF7C63206A223B00176853 /* SQLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4FF7C62206A223B00176853 /* SQLite.framework */; };
 		EA68A765A6C3C090189BDD9C /* AddPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB650F1CF13DA1D216B4C2BB /* AddPresenterTests.swift */; };
 		EC7BD8D71D533C4560004C13 /* AddPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F8854EAF28A41922E7E4646 /* AddPresenter.swift */; };
@@ -63,6 +69,8 @@
 		0613C78C66F9A44AF5C073F6 /* AddInteractorTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AddInteractorTests.swift; sourceTree = "<group>"; };
 		1D4CFCC3E6E4EE716972DF14 /* HogeInteractorTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HogeInteractorTests.swift; sourceTree = "<group>"; };
 		216581D90DC2925E9857CC68 /* HomeRouterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HomeRouterTests.swift; sourceTree = "<group>"; };
+		264FB65385DBC68C8668D009 /* SwiftChartInteractorTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SwiftChartInteractorTests.swift; sourceTree = "<group>"; };
+		4BBEAE736756EB0E8F75AB65 /* SwiftChartViewTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SwiftChartViewTests.swift; sourceTree = "<group>"; };
 		4F930D823CB103386183C3C7 /* HomeViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		55752901523D80710DD2D4DF /* HogePresenterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HogePresenterTests.swift; sourceTree = "<group>"; };
 		62C87FADD5A16220976D68AB /* HogeRouterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HogeRouterTests.swift; sourceTree = "<group>"; };
@@ -72,6 +80,7 @@
 		7F78E5CB61F6A61487266E6E /* HomePresenterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HomePresenterTests.swift; sourceTree = "<group>"; };
 		8694E2CBAC83877433CD7811 /* AddInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AddInteractor.swift; sourceTree = "<group>"; };
 		955062B6F6C704D4A22507E0 /* AddViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
+		95C71192B46779DE61328661 /* SwiftChartPresenterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SwiftChartPresenterTests.swift; sourceTree = "<group>"; };
 		9ECB6B240C1005976225C5DA /* HomeViewTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HomeViewTests.swift; sourceTree = "<group>"; };
 		B68EE7AD3EE36E328D87AF4D /* HomeInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
 		B84941AB1EBEEC9D0CF7D581 /* AddRouterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AddRouterTests.swift; sourceTree = "<group>"; };
@@ -97,6 +106,12 @@
 		E45F91BC2071EB5900A690E5 /* ResourceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourceService.swift; sourceTree = "<group>"; };
 		E45F91BF2071EF9700A690E5 /* BaseInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseInteractor.swift; sourceTree = "<group>"; };
 		E45F91C1207204BE00A690E5 /* InitService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitService.swift; sourceTree = "<group>"; };
+		E4F170842075F1D800BE9C47 /* SwiftChartRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftChartRouter.swift; sourceTree = "<group>"; };
+		E4F170862075F1FC00BE9C47 /* SwiftChartPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftChartPresenter.swift; sourceTree = "<group>"; };
+		E4F170882075F20D00BE9C47 /* SwiftChartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftChartViewController.swift; sourceTree = "<group>"; };
+		E4F1708A2075F21A00BE9C47 /* SwiftChartInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftChartInteractor.swift; sourceTree = "<group>"; };
+		E4F1708C2075F59B00BE9C47 /* SwiftCharts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftCharts.framework; path = Carthage/Build/iOS/SwiftCharts.framework; sourceTree = "<group>"; };
+		E4F1708E2075F5C600BE9C47 /* Charts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Charts.framework; path = Carthage/Build/iOS/Charts.framework; sourceTree = "<group>"; };
 		E4FF7C62206A223B00176853 /* SQLite.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SQLite.framework; path = Carthage/Build/iOS/SQLite.framework; sourceTree = "<group>"; };
 		FF1FF903E9648E9D7886D2F9 /* HogeViewTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HogeViewTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -106,6 +121,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4F1708F2075F5C600BE9C47 /* Charts.framework in Frameworks */,
+				E4F1708D2075F59B00BE9C47 /* SwiftCharts.framework in Frameworks */,
 				E4FF7C63206A223B00176853 /* SQLite.framework in Frameworks */,
 				E403FE6A2068CDC100BD2A8C /* Cartography.framework in Frameworks */,
 				E43258C82063973900871566 /* Eureka.framework in Frameworks */,
@@ -226,6 +243,21 @@
 			path = Router;
 			sourceTree = "<group>";
 		};
+		3B411C8DF7B40887B62C796C /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				E4F170842075F1D800BE9C47 /* SwiftChartRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		3E8DF6BB320B30CED15F868D /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
 		4081C50F6927575BB5383459 /* Hoge */ = {
 			isa = PBXGroup;
 			children = (
@@ -235,6 +267,27 @@
 				708D8F40F9F951CA20C36653 /* Router */,
 			);
 			path = Hoge;
+			sourceTree = "<group>";
+		};
+		41FBAD01DB675846A7F3F86C /* Graph */ = {
+			isa = PBXGroup;
+			children = (
+				E982FEDCBFA87C03EE4402D1 /* View */,
+				3E8DF6BB320B30CED15F868D /* Interactor */,
+				ABD16C6F2D02B11C10990831 /* Presenter */,
+			);
+			path = Graph;
+			sourceTree = "<group>";
+		};
+		4DE6A7C0F603E9ED573432BD /* SwiftChart */ = {
+			isa = PBXGroup;
+			children = (
+				DCE2436793EBD09AB1B4A8A5 /* View */,
+				BDEED19763E52E92FAE47AC2 /* Interactor */,
+				D3C6EC51025EA57F846023C5 /* Presenter */,
+				3B411C8DF7B40887B62C796C /* Router */,
+			);
+			path = SwiftChart;
 			sourceTree = "<group>";
 		};
 		4F3896C0802D258CDB6642F5 /* Interactor */ = {
@@ -280,6 +333,14 @@
 			path = Interactor;
 			sourceTree = "<group>";
 		};
+		68FF8F2022AE8AA8242BD94A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4BBEAE736756EB0E8F75AB65 /* SwiftChartViewTests.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		708D8F40F9F951CA20C36653 /* Router */ = {
 			isa = PBXGroup;
 			children = (
@@ -296,6 +357,13 @@
 			path = Presenter;
 			sourceTree = "<group>";
 		};
+		76FE99B430A1A2408A354A92 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
 		7BE76C56821D486ADE4F8294 /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
@@ -310,6 +378,24 @@
 				702130AD706FBE0E9A79A0DB /* AddRouter.swift */,
 			);
 			path = Router;
+			sourceTree = "<group>";
+		};
+		A686E31575AEA21065059F5F /* SwiftChart */ = {
+			isa = PBXGroup;
+			children = (
+				68FF8F2022AE8AA8242BD94A /* View */,
+				DF78D5B10F9512372CCF5CD7 /* Interactor */,
+				E6DBA6363FA893CEBD8178AA /* Presenter */,
+				76FE99B430A1A2408A354A92 /* Router */,
+			);
+			path = SwiftChart;
+			sourceTree = "<group>";
+		};
+		ABD16C6F2D02B11C10990831 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
 			sourceTree = "<group>";
 		};
 		AE496E0A6CD16CE51D56F19B /* View */ = {
@@ -336,11 +422,45 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		BDEED19763E52E92FAE47AC2 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				E4F1708A2075F21A00BE9C47 /* SwiftChartInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		D3C6EC51025EA57F846023C5 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				E4F170862075F1FC00BE9C47 /* SwiftChartPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		DCE2436793EBD09AB1B4A8A5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E4F170882075F20D00BE9C47 /* SwiftChartViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DF78D5B10F9512372CCF5CD7 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				264FB65385DBC68C8668D009 /* SwiftChartInteractorTests.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
 		E401770A206C9F3500CD7A9D /* Modules */ = {
 			isa = PBXGroup;
 			children = (
 				5D14599C55E6CBDF76D48267 /* Home */,
 				1E95BCE296FF0FF79A1A2676 /* Add */,
+				41FBAD01DB675846A7F3F86C /* Graph */,
+				4DE6A7C0F603E9ED573432BD /* SwiftChart */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -390,6 +510,7 @@
 				4081C50F6927575BB5383459 /* Hoge */,
 				219FE00E31A80EE60D88AD8E /* Add */,
 				189BA37FD496C2DE41F6FDF0 /* Home */,
+				A686E31575AEA21065059F5F /* SwiftChart */,
 			);
 			path = iOSBoilerplateTests;
 			sourceTree = "<group>";
@@ -421,6 +542,8 @@
 		E43258C62063973900871566 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E4F1708E2075F5C600BE9C47 /* Charts.framework */,
+				E4F1708C2075F59B00BE9C47 /* SwiftCharts.framework */,
 				E4FF7C62206A223B00176853 /* SQLite.framework */,
 				E403FE692068CDC100BD2A8C /* Cartography.framework */,
 				E43258C72063973900871566 /* Eureka.framework */,
@@ -452,6 +575,21 @@
 				E45F91BF2071EF9700A690E5 /* BaseInteractor.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		E6DBA6363FA893CEBD8178AA /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				95C71192B46779DE61328661 /* SwiftChartPresenterTests.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		E982FEDCBFA87C03EE4402D1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		F96A9EE5DD3812F7D49B36C5 /* View */ = {
@@ -600,6 +738,8 @@
 				"$(SRCROOT)/Carthage/Build/iOS/Eureka.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Cartography.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/SQLite.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Charts.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SwiftCharts.framework",
 			);
 			outputPaths = (
 			);
@@ -616,6 +756,7 @@
 			files = (
 				E4022661206362F00008C8F5 /* AppDelegate.swift in Sources */,
 				21650546425CE98DE008FDFC /* AddViewController.swift in Sources */,
+				E4F170852075F1D800BE9C47 /* SwiftChartRouter.swift in Sources */,
 				E45F91B82071D3AE00A690E5 /* TaskSchema.swift in Sources */,
 				EC7BD8D71D533C4560004C13 /* AddPresenter.swift in Sources */,
 				E45F91BD2071EB5900A690E5 /* ResourceService.swift in Sources */,
@@ -623,12 +764,15 @@
 				E45F91BB2071E50000A690E5 /* TaskService.swift in Sources */,
 				C9862D7A16C38A2A74516178 /* AddInteractor.swift in Sources */,
 				73F4043C4B0E65A19198E440 /* AddRouter.swift in Sources */,
+				E4F1708B2075F21A00BE9C47 /* SwiftChartInteractor.swift in Sources */,
 				C57E8C2F173CAB39C26D8BDA /* HomeViewController.swift in Sources */,
 				E45F91C02071EF9700A690E5 /* BaseInteractor.swift in Sources */,
 				17B2DE693982C7DDBC23667F /* HomeInteractor.swift in Sources */,
 				FBEFD457D44551D65A89A2FB /* HomePresenter.swift in Sources */,
 				E45F91C2207204BE00A690E5 /* InitService.swift in Sources */,
+				E4F170872075F1FC00BE9C47 /* SwiftChartPresenter.swift in Sources */,
 				8A5E7F4335507E84D6F3EA05 /* HomeRouter.swift in Sources */,
+				E4F170892075F20D00BE9C47 /* SwiftChartViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -794,6 +938,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = iOSBoilerplate/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tronperidot.iOSBoilerplate;
 				PRODUCT_NAME = "$(TARGET_NAME)";
